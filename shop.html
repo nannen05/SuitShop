@@ -26,6 +26,22 @@
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <a class="navbar-brand" href="#"><img src="hamburger.png"></a>
+      <div class="hidden-menu">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <ul>
+                <a href="#"><li>Login</li></a>
+                <a href="#"><li>New Users</li></a>
+                <a href="#"><li>FAQ</li></a>
+                <a href="#"><li>Forum</li></a>
+                <a href="#"><li>Careers</li></a>
+                <a href="#"><li>Cart</li></a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="hamburger-menu">
       <a class="" href="index.html"><img width="100px" src="logo_placeholder.png"></a>
@@ -65,7 +81,7 @@
     </div>
   </div>
 </section>
-<section>
+<section class="first-s">
   <div class="container">
     <div id="shop" class="row products">
       <div class="col-md-4 col-sm-4 product">
@@ -119,6 +135,22 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+  $(window).scroll(function(e){
+    parallax();
+  });
+  function parallax(){
+    var scrolled = $(window).scrollTop();
+    $('.bg-menu').css('top',-(scrolled*0.3)+'px');
+  }
+</script>
+<script>
+  $(".hidden-menu").hide();
+  $("a.navbar-brand").click(function(){
+    $(".hidden-menu").slideToggle('slow');
+    $("a.navbar-brand img").addClass("spin").removeClass("spin");
+  });
+</script>
 
 </body>
 </html>
