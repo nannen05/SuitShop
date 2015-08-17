@@ -9,7 +9,7 @@
 
   <!-- Bootstrap -->
   <link href="bootstrap.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
+  <link href="default.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 
@@ -25,7 +25,7 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <a class="navbar-brand" href="#"><img src="hamburger.png"></a>
+      <div class="navbar-brand" ><img class="spin" src="hamburger.png"></div>
         <div class="hidden-menu">
           <div class="container-fluid">
             <div class="row">
@@ -34,7 +34,7 @@
                   <a href="#"><li>Login</li></a>
                   <a href="#"><li>New Users</li></a>
                   <a href="#"><li>FAQ</li></a>
-                  <a href="#"><li>Forum</li></a>
+                  <a href="#"><li>Contact</li></a>
                   <a href="#"><li>Careers</li></a>
                   <a href="#"><li>Cart</li></a>
                 </ul>
@@ -46,13 +46,11 @@
     <div class="hamburger-menu">
       <a class="" href="index.html"><img width="100px" src="logo_placeholder.png"></a>
     </div>
-
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="icon-menu " >
       <ul class="nav navbar-nav navbar-right">
         <li class="icons"><a href="#"><img src="shop-icon.png"></a></li>
         <li class="icons"><a href="#"><img src="search.png"></a></li>
-
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -68,20 +66,13 @@
             <li><a href="blog.html"><h2>Blog</h2></a></li>
             <li><a href="contact.html"><h2>Contact</h2></a></li>
           </ul>
-
         </div>
       </div>
-      <!--<div class="row arrow">
-        <div class="col-md-12">
-        </div>
-      </div>-->
     </div>
   </div>
 </section>
   <!--<section>
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-
       <!-- Wrapper for slides
       <div class="carousel-inner" role="listbox">
         <div class="item active">
@@ -96,9 +87,7 @@
             ...
           </div>
         </div>
-
       </div>
-
       <!-- Controls
       <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
         <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -118,10 +107,8 @@
           <h1 class="title-tag">Home Title</h1>
           <hr>
           <p class="title-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod dui augue. Donec convallis sem quis imperdiet iaculis. Donec elementum ultricies interdum. Nulla tristique justo vel ex ullamcorper luctus. Pellentesque ligula ligula, imperdiet a scelerisque in, mattis sed quam. Suspendisse fermentum quis enim in placerat. Nunc non tellus leo. Sed non fringilla risus. Donec elementum risus eu congue viverra. Mauris vel magna non mauris iaculis sollicitudin. Cras blandit nisi ac nibh ornare, a cursus mauris porta.
-
           </p>
           <p class="title-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod dui augue. Donec convallis sem quis imperdiet iaculis. Donec elementum ultricies interdum. Nulla tristique justo vel ex ullamcorper luctus. Pellentesque ligula ligula, imperdiet a scelerisque in, mattis sed quam. Suspendisse fermentum quis enim in placerat. Nunc non tellus leo. Sed non fringilla risus. Donec elementum risus eu congue viverra. Mauris vel magna non mauris iaculis sollicitudin. Cras blandit nisi ac nibh ornare, a cursus mauris porta.
-
           </p>
         </div>
       </div>
@@ -130,7 +117,6 @@
 </section>
 <section>
   <div class="img-grid">
-
       <div class="row">
         <div class="col-md-6">
           <img src="suit-01.jpg">
@@ -158,7 +144,6 @@
             </div>
           </div>
         </div>
-
   </div>
 </section>
 <section>
@@ -258,28 +243,36 @@
 </section>
 <footer>
 </footer>
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script>
+<script src="suitshop.js"></script>
+<!--<script>
   $(window).scroll(function(e){
     parallax();
   });
   function parallax(){
     var scrolled = $(window).scrollTop();
     $('.bg-menu').css('top',-(scrolled*0.2)+'px');
-
   }
 </script>
 <script>
   $(".hidden-menu").hide();
-  $("a.navbar-brand").click(function(){
+  $(".navbar-brand").click(function(){
     $(".hidden-menu").slideToggle('slow');
-    $("a.navbar-brand img").addClass("spin").removeClass("spin");
+   // $("a.navbar-brand img").addClass("spin").removeClass("spin");
   });
 </script>
-
+<script>
+  $(".spin").click(function(){
+    //alert($("this").css("transform"));
+    if ($(this).css("transform") == 'none' ) {
+      $(this).css("transform" , "rotate(180deg");
+    }
+        else {
+        $(this).css("transform", "");
+      }
+      });
+</script>-->
 </body>
 </html>
