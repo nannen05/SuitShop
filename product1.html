@@ -13,6 +13,16 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+
+  <link rel="stylesheet" href="/fancybox/source/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+
+
+  <link rel="stylesheet" href="/fancybox/source/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+
+
+
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -62,12 +72,31 @@
   <div class="container">
     <div class="row single-product">
       <div class="col-md-6 productimg">
-        <img src="https://placehold.it/350x425">
+
+        <a class="fancybox" rel="group" href="https://placehold.it/500x500">
+          <img src="https://placehold.it/350x425">
+        </a>
         <ul class="thumbnails">
-          <li><img src="https://placehold.it/100x100"></li>
-          <li><img src="https://placehold.it/100x100"></li>
-          <li><img src="https://placehold.it/100x100"></li>
-          <li><img src="https://placehold.it/100x100"></li>
+          <li>
+              <a class="fancybox" rel="group" href="https://placehold.it/500x500">
+              <img src="https://placehold.it/100x100">
+              </a>
+          </li>
+          <li>
+            <a class="fancybox" rel="group" href="https://placehold.it/500x500">
+            <img src="https://placehold.it/100x100">
+            </a>
+          </li>
+          <li>
+            <a class="fancybox" rel="group" href="https://placehold.it/500x500">
+            <img src="https://placehold.it/100x100">
+            </a>
+          </li>
+          <li>
+            <a class="fancybox" rel="group" href="https://placehold.it/500x500">
+            <img src="https://placehold.it/100x100">
+            </a>
+          </li>
         </ul>
       </div>
       <div class="col-md-6 product-description">
@@ -365,12 +394,23 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="suitshop.js"></script>
-<!--<script>
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+<script type="text/javascript" src="/fancybox/source/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script type="text/javascript" src="/fancybox/source/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="/fancybox/source/jquery.fancybox-media.js?v=1.0.6"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".fancybox").fancybox({
+      type : "image"
+    });
+  });
+</script>
+<script>
   $(".hidden-menu").hide();
   $("a.navbar-brand").click(function(){
     $(".hidden-menu").slideToggle('slow');
     $("a.navbar-brand img").addClass("spin").removeClass("spin");
   });
-</script>-->
+</script>
 </body>
 </html>
