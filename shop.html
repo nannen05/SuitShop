@@ -25,7 +25,7 @@
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <a class="navbar-brand" href="#"><img src="hamburger.png"></a>
+      <a class="navbar-brand" href="#"><img class="spin" src="hamburger.png"></a>
       <div class="hidden-menu">
         <div class="container-fluid">
           <div class="row">
@@ -50,7 +50,39 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="icon-menu " >
       <ul class="nav navbar-nav navbar-right">
-        <li class="icons"><a href="#"><img src="shop-icon.png"></a></li>
+        <li class="icons dropdown">
+          <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+            <img src="shop-icon.png">
+          </a>
+          <div class="dropdown-menu row" aria-labelledby="drop1">
+            <div class="col-md-12 col-sm-12 cart-dropdown">
+              <img src="images/blue-01.jpg">
+              <h2 class="product-title">Product Title</h2>
+              <h3 class="product-price">$199.99</h3>
+              <img class="trash-icon" src="images/trash.png">
+            </div>
+            <div class="col-md-12 col-sm-12 cart-dropdown">
+              <img src="images/blue-01.jpg">
+              <h2 class="product-title">Product Title</h2>
+              <h3 class="product-price">$199.99</h3>
+              <img class="trash-icon" src="images/trash.png">
+            </div>
+            <div class="col-md-12 col-sm-12">
+              <p>
+                <a class="btn-std" href="checkout.html">
+                  Checkout
+                </a>
+              </p>
+            </div>
+            <div class="col-md-12 col-sm-12">
+              <p>
+                <a class="btn-std" href="cart.html">
+                  Update Cart
+                </a>
+              </p>
+            </div>
+          </div>
+        </li>
         <li class="icons"><a href="#"><img src="search.png"></a></li>
 
       </ul>
@@ -86,20 +118,20 @@
     <div id="shop" class="row products">
       <div class="col-md-4 col-sm-4 product">
         <a href="product1.html">
-          <img src="https://placehold.it/200x300">
+          <img src="images/blue-01.jpg">
           <h2 class="product-title">Product Title</h2>
           <hr>
           <h3 class="product-price">$199.99</h3>
          </a>
       </div>
       <div class="col-md-4 col-sm-4 product">
-        <img src="https://placehold.it/200x300">
+        <img src="images/blue-01.jpg">
         <h2 class="product-title">Product Title</h2>
         <hr>
         <h3 class="product-price">$199.99</h3>
       </div>
       <div class="col-md-4 col-sm-4 product">
-        <img src="https://placehold.it/200x300">
+        <img src="images/blue-01.jpg">
         <h2 class="product-title">Product Title</h2>
         <hr>
         <h3 class="product-price">$199.99</h3>
@@ -107,19 +139,19 @@
     </div>
     <div class="row products">
       <div class="col-md-4 col-sm-4 product">
-        <img src="https://placehold.it/200x300">
+        <img src="images/blue-01.jpg">
         <h2 class="product-title">Product Title</h2>
         <hr>
         <h3 class="product-price">$199.99</h3>
       </div>
       <div class="col-md-4 col-sm-4 product">
-        <img src="https://placehold.it/200x300">
+        <img src="images/blue-01.jpg">
         <h2 class="product-title">Product Title</h2>
         <hr>
         <h3 class="product-price">$199.99</h3>
       </div>
       <div class="col-md-4 col-sm-4 product">
-        <img src="https://placehold.it/200x300">
+        <img src="images/blue-01.jpg">
         <h2 class="product-title">Product Title</h2>
         <hr>
         <h3 class="product-price">$199.99</h3>
@@ -127,8 +159,54 @@
     </div>
   </div>
 </section>
+<section>
+  <div class="newsletter">
+    <div class="container-fluid">
+      <div class="col-md-12">
+        <h2>Join Our Newsletter</h2>
+        <div class="signup">
 
+          <label><input placeholder="Email address"></label>
+          <button>Subscribe</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <footer>
+  <div class="container-fluid">
+    <div class="col-md-12 footer-nav">
+      <ul>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+      </ul>
+    </div>
+    <div class="col-md-12">
+      <div class="social-img">
+        <img src="images/twitter.png">
+        <img src="images/twitter.png">
+        <img src="images/twitter.png">
+        <img src="images/twitter.png">
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="container-fluid">
+      <div class="col-md-6">
+        <a class="" href="index.html"><img width="100px" src="logo_placeholder.png"></a>
+      </div>
+      <div class="col-md-6">
+        <p>Copyright 2015 Suit Shop Inc. All rights reserved. Terms of Use | Privacy Policy</p>
+      </div>
+    </div>
+  </div>
 </footer>
 
 
@@ -136,6 +214,17 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="suitshop.js"></script>
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+<script type="text/javascript" src="/fancybox/source/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script type="text/javascript" src="/fancybox/source/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="/fancybox/source/jquery.fancybox-media.js?v=1.0.6"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".fancybox").fancybox({
+      type : "image"
+    });
+  });
+</script>
 <!--<script>
   $(window).scroll(function(e){
     parallax();

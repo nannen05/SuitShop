@@ -31,8 +31,7 @@
             <div class="row">
               <div class="col-md-12">
                 <ul>
-                  <a href="#"><li>Login</li></a>
-                  <a href="#"><li>New Users</li></a>
+                  <a href="login.html"><li>Login</li></a>
                   <a href="#"><li>FAQ</li></a>
                   <a href="#"><li>Contact</li></a>
                   <a href="#"><li>Careers</li></a>
@@ -49,7 +48,39 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="icon-menu " >
       <ul class="nav navbar-nav navbar-right">
-        <li class="icons"><a href="#"><img src="shop-icon.png"></a></li>
+        <li class="icons dropdown">
+            <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+              <img src="shop-icon.png">
+            </a>
+            <div class="dropdown-menu row" aria-labelledby="drop1">
+              <div class="col-md-12 col-sm-12 cart-dropdown">
+                <img src="images/blue-01.jpg">
+                <h2 class="product-title">Product Title</h2>
+                <h3 class="product-price">$199.99</h3>
+                <img class="trash-icon" src="images/trash.png">
+              </div>
+              <div class="col-md-12 col-sm-12 cart-dropdown">
+                <img src="images/blue-01.jpg">
+                <h2 class="product-title">Product Title</h2>
+                <h3 class="product-price">$199.99</h3>
+                <img class="trash-icon" src="images/trash.png">
+              </div>
+              <div class="col-md-12 col-sm-12">
+                <p>
+                  <a class="btn-std" href="checkout.html">
+                    Checkout
+                  </a>
+                </p>
+              </div>
+              <div class="col-md-12 col-sm-12">
+                <p>
+                  <a class="btn-std" href="cart.html">
+                    Update Cart
+                  </a>
+                </p>
+              </div>
+            </div>
+        </li>
         <li class="icons"><a href="#"><img src="search.png"></a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -241,38 +272,71 @@
     </div>
   </div>
 </section>
+<section>
+<div class="newsletter">
+  <div class="container-fluid">
+    <div class="col-md-12">
+      <h2>Join Our Newsletter</h2>
+      <div class="signup">
+
+          <label><input placeholder="Email address"></label>
+          <button>Subscribe</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+</section>
 <footer>
+  <div class="container-fluid">
+    <div class="col-md-12 footer-nav">
+      <ul>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+       </ul>
+    </div>
+    <div class="col-md-12">
+      <div class="social-img">
+        <img src="images/twitter.png">
+        <img src="images/twitter.png">
+        <img src="images/twitter.png">
+        <img src="images/twitter.png">
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="container-fluid">
+      <div class="col-md-6">
+        <a class="" href="index.html"><img width="100px" src="logo_placeholder.png"></a>
+      </div>
+      <div class="col-md-6">
+        <p>Copyright 2015 Suit Shop Inc. All rights reserved. Terms of Use | Privacy Policy</p>
+      </div>
+    </div>
+  </div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="suitshop.js"></script>
 <!--<script>
-  $(window).scroll(function(e){
-    parallax();
+  $(document).ready(function() {
+    function setHeight() {
+      windowHeight = $(window).innerHeight();
+      $('.bg-menu').css('min-height', windowHeight);
+    };
+    setHeight();
+
+    $(window).resize(function() {
+      setHeight();
+    });
   });
-  function parallax(){
-    var scrolled = $(window).scrollTop();
-    $('.bg-menu').css('top',-(scrolled*0.2)+'px');
-  }
-</script>
-<script>
-  $(".hidden-menu").hide();
-  $(".navbar-brand").click(function(){
-    $(".hidden-menu").slideToggle('slow');
-   // $("a.navbar-brand img").addClass("spin").removeClass("spin");
-  });
-</script>
-<script>
-  $(".spin").click(function(){
-    //alert($("this").css("transform"));
-    if ($(this).css("transform") == 'none' ) {
-      $(this).css("transform" , "rotate(180deg");
-    }
-        else {
-        $(this).css("transform", "");
-      }
-      });
 </script>-->
 </body>
 </html>

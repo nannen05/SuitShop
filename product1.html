@@ -15,13 +15,8 @@
 
   <!-- Add fancyBox -->
   <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
-
   <link rel="stylesheet" href="/fancybox/source/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-
-
   <link rel="stylesheet" href="/fancybox/source/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-
-
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,7 +30,7 @@
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <a class="navbar-brand" href="#"><img src="hamburger.png"></a>
+      <a class="navbar-brand" href="#"><img class="spin" src="hamburger.png"></a>
       <div class="hidden-menu">
         <div class="container-fluid">
           <div class="row">
@@ -60,7 +55,39 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="icon-menu " >
       <ul class="nav navbar-nav navbar-right">
-        <li class="icons"><a href="#"><img src="shop-icon.png"></a></li>
+        <li class="icons dropdown">
+          <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+            <img src="shop-icon.png">
+          </a>
+          <div class="dropdown-menu row" aria-labelledby="drop1">
+            <div class="col-md-12 col-sm-12 cart-dropdown">
+              <img src="images/blue-01.jpg">
+              <h2 class="product-title">Product Title</h2>
+              <h3 class="product-price">$199.99</h3>
+              <img class="trash-icon" src="images/trash.png">
+            </div>
+            <div class="col-md-12 col-sm-12 cart-dropdown">
+              <img src="images/blue-01.jpg">
+              <h2 class="product-title">Product Title</h2>
+              <h3 class="product-price">$199.99</h3>
+              <img class="trash-icon" src="images/trash.png">
+            </div>
+            <div class="col-md-12 col-sm-12">
+              <p>
+                <a class="btn-std" href="checkout.html">
+                  Checkout
+                </a>
+              </p>
+            </div>
+            <div class="col-md-12 col-sm-12">
+              <p>
+                <a class="btn-std" href="cart.html">
+                  Update Cart
+                </a>
+              </p>
+            </div>
+          </div>
+        </li>
         <li class="icons"><a href="#"><img src="search.png"></a></li>
 
       </ul>
@@ -73,28 +100,28 @@
     <div class="row single-product">
       <div class="col-md-6 productimg">
 
-        <a class="fancybox" rel="group" href="https://placehold.it/500x500">
-          <img src="https://placehold.it/350x425">
+        <a class="fancybox" rel="group" href="images/blue-01-lg.jpg">
+          <img src="images/blue-01.jpg">
         </a>
         <ul class="thumbnails">
           <li>
-              <a class="fancybox" rel="group" href="https://placehold.it/500x500">
-              <img src="https://placehold.it/100x100">
+              <a class="fancybox" rel="group" href="images/blue-02-lg.jpg">
+              <img src="images/blue-02.jpg">
               </a>
           </li>
           <li>
-            <a class="fancybox" rel="group" href="https://placehold.it/500x500">
-            <img src="https://placehold.it/100x100">
+            <a class="fancybox" rel="group" href="images/blue-03.jpg">
+            <img src="images/blue-03-sm.jpg">
             </a>
           </li>
           <li>
-            <a class="fancybox" rel="group" href="https://placehold.it/500x500">
-            <img src="https://placehold.it/100x100">
+            <a class="fancybox" rel="group" href="images/blue-04.jpg">
+            <img src="images/blue-04-sm.jpg">
             </a>
           </li>
           <li>
-            <a class="fancybox" rel="group" href="https://placehold.it/500x500">
-            <img src="https://placehold.it/100x100">
+            <a class="fancybox" rel="group" href="images/blue-05.jpg">
+            <img src="images/blue-05-sm.jpg">
             </a>
           </li>
         </ul>
@@ -158,11 +185,11 @@
         </div>
         <div class="buttons">
           <div class="cart">
-            <button>Add To Cart</button>
+            <button class="cart">Add To Cart</button>
           </div>
           <div class="cart">
             <!--<a href="customize.html">-->
-            <button type="button" data-toggle="modal" data-target=".bs-example-modal-lg">Customize</button>
+            <button class="cart" type="button" data-toggle="modal" data-target=".bs-example-modal-lg">Customize</button>
               <!-- Large modal -->
               <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                 <div class="modal-dialog modal-lg">
@@ -179,34 +206,36 @@
                           </div>
                         </div>
                         <div class="row">
+                        <form>
                           <div class="col-md-3">
                             <label>
                               <input type="radio" name="fb" value="small" />
-                              <img src="http://placehold.it/175x200/ffffff/333333">
+                              <img src="images/button-1.png">
                             </label>
                             <h3 class="subtitle">1 Button</h3>
                           </div>
                           <div class="col-md-3">
                             <label>
                               <input type="radio" name="fb" value="small" />
-                              <img src="http://placehold.it/175x200/ffffff/333333">
+                              <img src="images/button-2.png">
                             </label>
                             <h3 class="subtitle">1 Button</h3>
                           </div>
                           <div class="col-md-3">
                             <label>
                               <input type="radio" name="fb" value="small" />
-                              <img src="http://placehold.it/175x200/ffffff/333333">
+                              <img src="images/button-3.png">
                             </label>
                             <h3 class="subtitle">1 Button</h3>
                           </div>
                           <div class="col-md-3">
                             <label>
                               <input type="radio" name="fb" value="small" />
-                              <img src="http://placehold.it/175x200/ffffff/333333">
+                              <img src="images/button-4.png">
                             </label>
                             <h3 class="subtitle">1 Button</h3>
                           </div>
+                          </form>
                           <div class="row">
                             <div class="col-md-12">
                               <h2 class="title">JACKET LAPELS</h2>
@@ -214,151 +243,149 @@
                           </div>
 
                           <div class="row">
+                          <form>
                             <div class="col-md-3">
                               <label>
                                 <input type="radio" name="fb" value="small" />
-                                <img src="http://placehold.it/175x200/ffffff/333333">
+                                <img src="images/notch.png">
                               </label>
                               <h3 class="subtitle">1 Button</h3>
                             </div>
                             <div class="col-md-3">
                               <label>
                                 <input type="radio" name="fb" value="small" />
-                                <img src="http://placehold.it/175x200/ffffff/333333">
+                                <img src="images/notch-slm.png">
                               </label>
                               <h3 class="subtitle">1 Button</h3>
                             </div>
                             <div class="col-md-3">
                               <label>
                                 <input type="radio" name="fb" value="small" />
-                                <img src="http://placehold.it/175x200/ffffff/333333">
+                                <img src="images/peak.png">
                               </label>
                               <h3 class="subtitle">1 Button</h3>
                             </div>
                             <div class="col-md-3">
                               <label>
                                 <input type="radio" name="fb" value="small" />
-                                <img src="http://placehold.it/175x200/ffffff/333333">
+                                <img src="images/peak-wide.png">
                               </label>
                               <h3 class="subtitle">1 Button</h3>
                             </div>
+                            </form>
                             <div class="row">
                               <div class="col-md-12">
                                 <h2 class="title">Jacket vents</h2>
                               </div>
                             </div>
                             <div class="row">
-                              <div class="col-md-3">
+                              <div class="col-md-4">
                                 <label>
                                   <input type="radio" name="fb" value="small" />
-                                  <img src="http://placehold.it/175x200/ffffff/333333">
+                                  <img src="images/vent-0.png">
                                 </label>
                                 <h3 class="subtitle">1 Button</h3>
                               </div>
-                              <div class="col-md-3">
+                              <div class="col-md-4">
                                 <label>
                                   <input type="radio" name="fb" value="small" />
-                                  <img src="http://placehold.it/175x200/ffffff/333333">
+                                  <img src="images/vent-1.png">
                                 </label>
                                 <h3 class="subtitle">1 Button</h3>
                               </div>
-                              <div class="col-md-3">
+                              <div class="col-md-4">
                                 <label>
                                   <input type="radio" name="fb" value="small" />
-                                  <img src="http://placehold.it/175x200/ffffff/333333">
+                                  <img src="images/vent-2.png">
                                 </label>
                                 <h3 class="subtitle">1 Button</h3>
                               </div>
-                              <div class="col-md-3">
-                                <label>
-                                  <input type="radio" name="fb" value="small" />
-                                  <img src="http://placehold.it/175x200/ffffff/333333">
-                                </label>
-                                <h3 class="subtitle">1 Button</h3>
-                              </div>
-
                             </div>
                             <div class="row">
                               <div class="col-md-12">
                                 <h2 class="title">JACKET Lining</h2>
                               </div>
                             </div>
+                            <form>
                             <div class="row">
-                              <div class="col-md-1">
+                              <div class="col-md-2">
                                 <label>
                                   <input type="radio" name="fb" value="small" />
-                                  <img src="http://placehold.it/40x40/ffffff/333333">
+                                  <img class="lining" src="images/lining1.jpg">
                                 </label>
                               </div>
-                              <div class="col-md-1">
+                              <div class="col-md-2">
                                 <label>
                                   <input type="radio" name="fb" value="small" />
-                                  <img src="http://placehold.it/40x40/ffffff/333333">
+                                  <img class="lining" src="images/lining1.jpg">
                                 </label>
                               </div>
-                              <div class="col-md-1">
+                              <div class="col-md-2">
                                 <label>
                                   <input type="radio" name="fb" value="small" />
-                                  <img src="http://placehold.it/40x40/ffffff/333333">
+                                  <img class="lining" src="images/lining1.jpg">
                                 </label>
                               </div>
-                              <div class="col-md-1">
+                              <div class="col-md-2">
                                 <label>
                                   <input type="radio" name="fb" value="small" />
-                                  <img src="http://placehold.it/40x40/ffffff/333333">
+                                  <img class="lining" src="images/lining1.jpg">
                                 </label>
                               </div>
-                              <div class="col-md-1">
+                              <div class="col-md-2">
                                 <label>
                                   <input type="radio" name="fb" value="small" />
-                                  <img src="http://placehold.it/40x40/ffffff/333333">
+                                  <img class="lining" src="images/lining1.jpg">
                                 </label>
                               </div>
-                              <div class="col-md-1">
+                              <div class="col-md-2">
                                 <label>
                                   <input type="radio" name="fb" value="small" />
-                                  <img src="http://placehold.it/40x40/ffffff/333333">
+                                  <img class="lining" src="images/lining1.jpg">
                                 </label>
                               </div>
-                              <div class="col-md-1">
+                            </div>
+                            <div class="row">
+                              <div class="col-md-2">
                                 <label>
                                   <input type="radio" name="fb" value="small" />
-                                  <img src="http://placehold.it/40x40/ffffff/333333">
+                                  <img class="lining" src="images/lining1.jpg">
                                 </label>
                               </div>
-                              <div class="col-md-1">
+                              <div class="col-md-2">
                                 <label>
                                   <input type="radio" name="fb" value="small" />
-                                  <img src="http://placehold.it/40x40/ffffff/333333">
+                                  <img class="lining" src="images/lining1.jpg">
                                 </label>
                               </div>
-                              <div class="col-md-1">
+                              <div class="col-md-2">
                                 <label>
                                   <input type="radio" name="fb" value="small" />
-                                  <img src="http://placehold.it/40x40/ffffff/333333">
+                                  <img class="lining" src="images/lining1.jpg">
                                 </label>
                               </div>
-                              <div class="col-md-1">
+                              <div class="col-md-2">
                                 <label>
                                   <input type="radio" name="fb" value="small" />
-                                  <img src="http://placehold.it/40x40/ffffff/333333">
+                                  <img class="lining" src="images/lining1.jpg">
                                 </label>
                               </div>
-                              <div class="col-md-1">
+                              <div class="col-md-2">
                                 <label>
                                   <input type="radio" name="fb" value="small" />
-                                  <img src="http://placehold.it/40x40/ffffff/333333">
+                                  <img class="lining" src="images/lining1.jpg">
                                 </label>
                               </div>
-                              <div class="col-md-1">
+                              <div class="col-md-2">
                                 <label>
                                   <input type="radio" name="fb" value="small" />
-                                  <img src="http://placehold.it/40x40/ffffff/333333">
+                                  <img class="lining" src="images/lining1.jpg">
                                 </label>
                               </div>
 
                             </div>
                           </div>
+                          </form>
                   </div>
                 </div>
               </div>
@@ -378,7 +405,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="btn-cont">
-          <a class="back-link" href="shop.html">
+          <a class="btn-std" href="shop.html">
             Back to shop
           </a>
          </div>
@@ -386,7 +413,54 @@
     </div>
   </div>
 </section>
+<section>
+  <div class="newsletter">
+    <div class="container-fluid">
+      <div class="col-md-12">
+        <h2>Join Our Newsletter</h2>
+        <div class="signup">
+
+          <label><input placeholder="Email address"></label>
+          <button>Subscribe</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <footer>
+  <div class="container-fluid">
+    <div class="col-md-12 footer-nav">
+      <ul>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+      </ul>
+    </div>
+    <div class="col-md-12">
+      <div class="social-img">
+        <img src="images/twitter.png">
+        <img src="images/twitter.png">
+        <img src="images/twitter.png">
+        <img src="images/twitter.png">
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="container-fluid">
+      <div class="col-md-6">
+        <a class="" href="index.html"><img width="100px" src="logo_placeholder.png"></a>
+      </div>
+      <div class="col-md-6">
+        <p>Copyright 2015 Suit Shop Inc. All rights reserved. Terms of Use | Privacy Policy</p>
+      </div>
+    </div>
+  </div>
 </footer>
 
 
@@ -405,12 +479,12 @@
     });
   });
 </script>
-<script>
+<!--<script>
   $(".hidden-menu").hide();
   $("a.navbar-brand").click(function(){
     $(".hidden-menu").slideToggle('slow');
     $("a.navbar-brand img").addClass("spin").removeClass("spin");
   });
-</script>
+</script>-->
 </body>
 </html>
