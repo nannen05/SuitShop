@@ -24,10 +24,33 @@ button {transition: all .4s ease-in;}
   top: 0;
   width: 100%;
   z-index: 1060;
-  background-color: #fff;
   display: none;
-  margin-top: -20px;
+  /*margin-top: -20px;*/
+  background: #eee;
 }
+.welcome h2 {
+  margin-top: 14px;
+  font-size: 16px;
+  margin-bottom: 13px;
+}
+.welcome img {
+  width: 25px;
+  margin-top: 10px;
+  padding-right: 5px;
+}
+.close-message {
+  float: right;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1070;
+  display: block;
+
+}
+.new-user-form {
+  display: none;
+}
+
 .block {
   display: block!important;
   -webkit-transition: all 0.5s ease-in-out;
@@ -41,7 +64,7 @@ button {transition: all .4s ease-in;}
   transition: 500 ease-in-out;
 }
 section {background-color: #fff;}
-/*section.first-s {margin-top:36%;}*/
+section.first-s {margin-top:36%;}
 .navbar-default {
   background-color: #fff;
   border-color: #fff;
