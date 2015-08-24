@@ -12,6 +12,10 @@ function spinImage(){
   }
 };
 
+function addToCart() {
+  $('.add-to-cart').css('display', 'block');
+}
+
 function parallax(){
   var scrolled = $(window).scrollTop();
   $('.bg-menu').css('top',-(scrolled*0.2)+'px');
@@ -82,7 +86,7 @@ $(".spin").click(function(){
   else {
     //closeMessage = true;
     //messageMenu = true;
-    $('.hidden-menu').css('margin-top', '54px');
+    $('.hidden-menu').css('margin-top', '59px');
     spinImage();
     console.log('No');
   };
@@ -132,8 +136,29 @@ $(".close-message").click(function(){
   }
   else {
 
-    $('.hidden-menu').css('margin-top', '54px');
+    $('.hidden-menu').css('margin-top', '59px');
   };
   //menuHide();
 
+});
+
+$('.cart').click(function() {
+  addToCart();
+  //var cartContents = '<div class="col-md-12 col-sm-12 cart-dropdown">';
+  //cartContents +=   '<img src="images/blue-01.jpg">';
+  //cartContents +=    '<h2 class="product-title">Product Title</h2>';
+  //cartContents +=    '<h3 class="product-price">$199.99</h3>';
+  //cartContents +=    '<img class="trash-icon" src="images/trash.png">';
+  //cartContents +=    '</div>';
+
+});
+//hide products in cart dropwdown
+
+function hideProductDrop(){
+  ('.product1').remove();
+};
+
+
+$('.trash-icon').mouseover(function(){
+  hideProductDrop();
 });
