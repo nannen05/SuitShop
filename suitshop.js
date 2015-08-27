@@ -144,12 +144,7 @@ $(".close-message").click(function(){
 
 $('.cart').click(function() {
   addToCart();
-  //var cartContents = '<div class="col-md-12 col-sm-12 cart-dropdown">';
-  //cartContents +=   '<img src="images/blue-01.jpg">';
-  //cartContents +=    '<h2 class="product-title">Product Title</h2>';
-  //cartContents +=    '<h3 class="product-price">$199.99</h3>';
-  //cartContents +=    '<img class="trash-icon" src="images/trash.png">';
-  //cartContents +=    '</div>';
+
 
 });
 //hide products in cart dropwdown

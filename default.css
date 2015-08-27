@@ -1,7 +1,14 @@
 h1,h2,h3,h4,h5,h6,p {font-family: Arimo;}
 h2 {font-size:22px;text-align: center; text-transform: uppercase;}
-a {text-decoration: none!important;}
+a {text-decoration: none!important;color: #333;}
+a:hover {color: #333;}
 button {transition: all .4s ease-in;}
+hr {
+  width: 2%;
+  border: 1px solid #333;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
 /*body {margin-top:60px;}*/
 /*body {overflow: hidden;}*/
 #splashscreen {
@@ -206,6 +213,14 @@ img.spin {
  /*.after-nav {
   margin-top: 57px;
  }*/
+
+ /* TAbs */
+.nav-tabs > li {
+  float: none;
+}
+.nav-tabs {
+  text-align: center
+}
 .login-menu {
   background-image: url('suit2.jpg');
   height: 300;
@@ -239,13 +254,23 @@ h1.title-tag {
   padding-bottom: 10px;
   line-height: 42px;
 }
-p.title-p  {
+h2.title-h2  {
+  width: 80%;
+  text-align: center;
+  color: #9e9e9e;
+  margin: 0 auto;
+  padding: 15px 0 10px 0;
+  line-height: 26px;
+  font-size: 20px;
+}
+.title-p{
   width: 80%;
   text-align: center;
   color: #9e9e9e;
   margin: 0 auto;
   padding: 15px 0 10px 0;
 }
+
 .carousel-inner img {
   width:100%;
 }
@@ -272,6 +297,20 @@ p.title-p  {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.main-header .overlay,
+.main-header .img-block .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: inherit;
+  padding: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -59px;
 }
 .category,
 .subcaption,
@@ -324,6 +363,9 @@ h3.title {
 .posts-row .col-md-3 {
   padding-left:0px;
   padding-right: 0px;
+}
+a.dark:hover img {
+  opacity: 0.7;
 }
 
 .social-divider {
@@ -441,14 +483,16 @@ h3.title {
   width: 500px;
 }
 .newsletter .signup button,
-.login-form button{
+.login-form button,
+.forms button{
   background-color: #333;
   border: 1px solid #333;
   color: #fff;
   padding: 7px 20px;
 }
 .newsletter .signup button:hover,
-.login-form button:hover {
+.login-form button:hover,
+.forms button:hover {
   background-color: #fff;
   color: #333;
 }
@@ -477,6 +521,48 @@ h3.title {
 .login-form button{
   width: 100%;
   max-width: 300px;
+}
+.main-header img {
+  width: 100%;
+}
+.main-header {
+  margin-top: 59px;
+}
+
+h3.main {
+  font-size: 54px;
+  color:#fff;
+  text-transform: uppercase;
+}
+.forms {
+  max-width: 300px;
+  text-align: center;
+  margin: 25px auto;
+
+}
+.forms label {
+  display: block;
+}
+.forms input,
+.forms button{
+  width: 100%;
+}
+.forms textarea{
+  max-width: 300px;
+}
+.forms span {
+  float: left;
+}
+.forms select{
+  float: right;
+  width: 30%;
+  margin-left: 5px;
+}
+.forms div{
+  padding: 0px 0;
+  display: block;
+  position: relative;
+  height: 25px;
 }
 
 
@@ -756,9 +842,20 @@ a.btn-std:hover {
   border:2px solid #333;
   box-shadow: 0 0PX 15px rgb(158, 158, 158);
 }
+.jumbotron {
+  background-color: #fff;
+}
 img.lining {
   width: 100px;
 }
+/* Blog */
+h3.blog-date {
+  font-size: 14px;
+  color: #9e9e9e;
+  margin-top: 0px;
+  margin-bottom: -1%;
+}
+
   /*footer */
 
 footer {
@@ -924,6 +1021,7 @@ footer img {
   .copyright p {
     float: none;
     text-align: center;
+    display: block;
   }
   .cart-img,.trash-icon-cart {
     float:none;
@@ -939,6 +1037,10 @@ footer img {
     float: none;
     text-align: center;
 
+  }
+  h3.main {
+  font-size: 40px;
+  margin-top: 40px;
   }
 }
 @media (max-width: 600px) {
@@ -977,6 +1079,10 @@ footer img {
   .instagram ul {
     padding-left: 5px;
     text-align: center;
+  }
+  h3.main {
+    font-size: 35px;
+    margin-top: 60px;
   }
 }
 
