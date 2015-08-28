@@ -1,2 +1,2 @@
 Description: 
-A suit shop, with the option to customize your suit
+An ecommerce website where male professionals are able to get suits tailored to there specific needs
