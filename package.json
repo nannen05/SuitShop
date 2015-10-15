@@ -1,0 +1,19 @@
+{
+  "name": "suitshop",
+  "version": "1.0.0",
+  "description": "Description: \r A suit shop, with the option to customize your suit",
+  "main": "suitshop.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nannen05/suitshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nannen05/suitshop/issues"
+  },
+  "homepage": "https://github.com/nannen05/suitshop#readme"
+}
