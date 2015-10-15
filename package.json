@@ -2,7 +2,7 @@
   "name": "suitshop",
   "version": "1.0.0",
   "description": "Description: \r A suit shop, with the option to customize your suit",
-  "main": "suitshop.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nannen05/suitshop/issues"
   },
-  "homepage": "https://github.com/nannen05/suitshop#readme"
+  "homepage": "https://github.com/nannen05/suitshop#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
 }
